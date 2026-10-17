@@ -1,0 +1,47 @@
+# RoboOS Master 配置 — DeepSeek API 版（覆盖 RoboOS 默认的本地 vLLM RoboBrain）
+# 用法：cd RoboOS/master && python -c "from agents.agent import GlobalAgent ..."
+#       或经接入层 EnhancedGlobalAgent(config_path="config/master_deepseek.yaml")
+# 注意：相对路径（./scene/profile.yaml, .logs/）以 RoboOS/master 为工作目录。
+
+audio:
+  sample_rate: 16000
+  channels: 1
+  duration: 5
+  exceed_time: 20
+  threshold: 2000
+  silence_duration: 5
+  audio_record_enable: false
+  audio_file_path: "./tmp_audio.wav"
+
+tts:
+  tts_speak_enable: false
+  tts_random_seed: 1924
+  tts_output_file: "./tts_audio.wav"
+
+model:
+  model_select: "deepseek-chat"
+  model_retry_planning: 5
+  model_dict:
+    cloud_model: "deepseek-chat"
+    cloud_type: "default"
+    cloud_api_key: "ENV:LLM_API_KEY"      # 接入层运行时从环境变量替换
+    cloud_server: "https://api.deepseek.com/v1/"
+    max_chat_message: 50
+
+collaborator:
+  host: "127.0.0.1"
+  port: 6379
+  db: 0
+  clear: false          # e2e 时不能清库，否则先启动的 Slaver 注册信息被抹掉
+  password: ""
+
+logger:
+  master_logger_name: "GlobalAgent"
+  master_logger_level: "DEBUG"
+  master_logger_file: ".logs/master_agent.log"
+  robot_memory_yaml: ".log/robot_memory.yaml"
+
+profiling: true
+
+profile:
+  path: ./scene/profile.yaml

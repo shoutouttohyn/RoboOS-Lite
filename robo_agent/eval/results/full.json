@@ -1,0 +1,234 @@
+{
+  "config": "full",
+  "n_episodes": 25,
+  "success_rate": 0.28,
+  "avg_steps": 1.36,
+  "avg_latency_s": 14.8736,
+  "episodes": [
+    {
+      "task_id": "t1",
+      "episode": 0,
+      "success": false,
+      "failure_reason": "planning_illegal",
+      "n_steps": 0,
+      "latency_s": 38.96,
+      "config": "full"
+    },
+    {
+      "task_id": "t1",
+      "episode": 1,
+      "success": true,
+      "failure_reason": "",
+      "n_steps": 2,
+      "latency_s": 22.75,
+      "config": "full"
+    },
+    {
+      "task_id": "t1",
+      "episode": 2,
+      "success": false,
+      "failure_reason": "partial_completion",
+      "n_steps": 2,
+      "latency_s": 13.55,
+      "config": "full"
+    },
+    {
+      "task_id": "t1",
+      "episode": 3,
+      "success": false,
+      "failure_reason": "planning_illegal",
+      "n_steps": 0,
+      "latency_s": 35.77,
+      "config": "full"
+    },
+    {
+      "task_id": "t1",
+      "episode": 4,
+      "success": true,
+      "failure_reason": "",
+      "n_steps": 2,
+      "latency_s": 26.11,
+      "config": "full"
+    },
+    {
+      "task_id": "t2",
+      "episode": 0,
+      "success": false,
+      "failure_reason": "partial_completion",
+      "n_steps": 1,
+      "latency_s": 5.34,
+      "config": "full"
+    },
+    {
+      "task_id": "t2",
+      "episode": 1,
+      "success": false,
+      "failure_reason": "partial_completion",
+      "n_steps": 1,
+      "latency_s": 5.44,
+      "config": "full"
+    },
+    {
+      "task_id": "t2",
+      "episode": 2,
+      "success": true,
+      "failure_reason": "",
+      "n_steps": 1,
+      "latency_s": 7.92,
+      "config": "full"
+    },
+    {
+      "task_id": "t2",
+      "episode": 3,
+      "success": false,
+      "failure_reason": "partial_completion",
+      "n_steps": 1,
+      "latency_s": 6.5,
+      "config": "full"
+    },
+    {
+      "task_id": "t2",
+      "episode": 4,
+      "success": false,
+      "failure_reason": "partial_completion",
+      "n_steps": 1,
+      "latency_s": 6.57,
+      "config": "full"
+    },
+    {
+      "task_id": "t3",
+      "episode": 0,
+      "success": false,
+      "failure_reason": "partial_completion",
+      "n_steps": 1,
+      "latency_s": 3.64,
+      "config": "full"
+    },
+    {
+      "task_id": "t3",
+      "episode": 1,
+      "success": false,
+      "failure_reason": "partial_completion",
+      "n_steps": 1,
+      "latency_s": 10.39,
+      "config": "full"
+    },
+    {
+      "task_id": "t3",
+      "episode": 2,
+      "success": false,
+      "failure_reason": "partial_completion",
+      "n_steps": 1,
+      "latency_s": 4.93,
+      "config": "full"
+    },
+    {
+      "task_id": "t3",
+      "episode": 3,
+      "success": false,
+      "failure_reason": "partial_completion",
+      "n_steps": 1,
+      "latency_s": 21.21,
+      "config": "full"
+    },
+    {
+      "task_id": "t3",
+      "episode": 4,
+      "success": false,
+      "failure_reason": "partial_completion",
+      "n_steps": 1,
+      "latency_s": 9.68,
+      "config": "full"
+    },
+    {
+      "task_id": "t4",
+      "episode": 0,
+      "success": true,
+      "failure_reason": "",
+      "n_steps": 1,
+      "latency_s": 6.77,
+      "config": "full"
+    },
+    {
+      "task_id": "t4",
+      "episode": 1,
+      "success": true,
+      "failure_reason": "",
+      "n_steps": 1,
+      "latency_s": 9.43,
+      "config": "full"
+    },
+    {
+      "task_id": "t4",
+      "episode": 2,
+      "success": true,
+      "failure_reason": "",
+      "n_steps": 1,
+      "latency_s": 8.7,
+      "config": "full"
+    },
+    {
+      "task_id": "t4",
+      "episode": 3,
+      "success": false,
+      "failure_reason": "partial_completion",
+      "n_steps": 1,
+      "latency_s": 4.37,
+      "config": "full"
+    },
+    {
+      "task_id": "t4",
+      "episode": 4,
+      "success": false,
+      "failure_reason": "partial_completion",
+      "n_steps": 1,
+      "latency_s": 9.17,
+      "config": "full"
+    },
+    {
+      "task_id": "t5",
+      "episode": 0,
+      "success": false,
+      "failure_reason": "partial_completion",
+      "n_steps": 2,
+      "latency_s": 19.33,
+      "config": "full"
+    },
+    {
+      "task_id": "t5",
+      "episode": 1,
+      "success": false,
+      "failure_reason": "partial_completion",
+      "n_steps": 1,
+      "latency_s": 35.64,
+      "config": "full"
+    },
+    {
+      "task_id": "t5",
+      "episode": 2,
+      "success": false,
+      "failure_reason": "planning_illegal",
+      "n_steps": 0,
+      "latency_s": 38.14,
+      "config": "full"
+    },
+    {
+      "task_id": "t5",
+      "episode": 3,
+      "success": true,
+      "failure_reason": "",
+      "n_steps": 5,
+      "latency_s": 11.47,
+      "config": "full"
+    },
+    {
+      "task_id": "t5",
+      "episode": 4,
+      "success": false,
+      "failure_reason": "partial_completion",
+      "n_steps": 5,
+      "latency_s": 10.06,
+      "config": "full"
+    }
+  ]
+}

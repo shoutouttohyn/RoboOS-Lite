@@ -1,0 +1,15 @@
+# 运行产物
+run/
+*.log
+__pycache__/
+*.pyc
+.env
+
+# RoboOS 上游源码（子模块/手动 clone，不入库）
+RoboOS/
+
+# 本地 Qdrant 数据（若在项目内）
+data/qdrant/
+
+# 个人学习笔记（不公开放）
+notes/

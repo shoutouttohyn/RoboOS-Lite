@@ -1,0 +1,35 @@
+# RoboOS Slaver 配置 — DeepSeek API + 本地 demo 机器人（FastMCP stdio 模式）
+# 由 scripts/run_slaver.py 生成（ENV: 占位符替换后写入运行工作区）
+
+tool:
+  support_tool_calls: false
+  matching:
+    max_tools: 3
+    min_similarity: 0.1
+
+model:
+  model_select: "deepseek-chat"
+  model_retry_planning: 5
+  model_dict:
+    cloud_model: "deepseek-chat"
+    cloud_type: "default"
+    cloud_api_key: "ENV:LLM_API_KEY"
+    cloud_server: "https://api.deepseek.com/v1/"
+    max_chat_message: 50
+
+collaborator:
+  host: "127.0.0.1"
+  port: 6379
+  db: 0
+  clear: false
+  password: ""
+
+camera:
+  image_path: "images/"
+
+robot:
+  name: demo_robot
+  call_type: local
+  path: "demo_robot_local"
+
+profiling: true
